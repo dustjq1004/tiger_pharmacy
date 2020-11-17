@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+/*  이곳은 댓글 모달      */
+
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    margin: 8px 0;
+    padding: 14px 20px;
+    cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+.boardBtn {
+	text-align: right;
+	width: 100%;
+	padding-right: 20px;
+}
+
+.pswContainer {
+	padding: 16px;
+}
+
+.delete_box {
+	position: fixed;
+	z-index: 1000000;
+	width:510px;
+	height:100px;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+
+.revise_box {
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:510px;
+	height:100px;
+	z-index: 1000000;
+	display: none;
+}
+
+.reply_box {
+	position: fixed;
+	z-index: 1000000;
+	top: 0;
+	left: 0;
+	width:510px;
+	height:100px;
+	display: none;
+}
+
+.reply_d_box {
+	position: fixed;
+	z-index: 1000000;
+	top: 0;
+	left: 0;
+	width:510px;
+	height:100px;
+	display: none;
+}
+
+.reply_box_content {
+	width: 500px;
+	background-color: white;
+	box-shadow: 0 0 10px #333;
+	border-radius: 5px;
+}
+
+.reply_close {
+	font-size: 35px;
+	font-weight: bold;
+	position: absolute;
+	right: 10px;
+	top: -15px;
+	color: #000;
+}
+
+.reply_d_close {
+	font-size: 35px;
+	font-weight: bold;
+	position: absolute;
+	right: 10px;
+	top: -15px;
+	color: #000;
+}
+.close2 {
+	position:absolute;
+	left:480px;
+	top:-15px;
+	font-size: 35px;
+	font-weight: bold;
+	color: #000;
+}
+
+.close1 {
+	font-size: 35px;
+	font-weight: bold;
+	position: absolute;
+	right:10px;
+	top:-15px;
+	color: #000;
+}
+
+.reply_close:hover, .reply_close:focus {
+	color: red;
+	cursor: pointer;
+}
+
+.reply_d_close:hover, .reply_d_close:focus {
+	color: red;
+	cursor: pointer;
+}
+
+.close2:hover, .close2:focus {
+	color: red;
+	cursor: pointer;
+}
+
+.close1:hover, .close1:focus {
+	color: red;
+	cursor: pointer;
+}
+
+.btnCHK {
+	background-color: orange;
+	color: white;
+	border: none;
+	float: right;
+	margin: 8px 0;
+	padding: 12px 20px;
+	cursor: pointer;
+}
+
+.btnCHK:hover {
+	opacity: 0.6;
+}
+
+input[type=text], input[type=password], textarea {
+	width: 41%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	border: 1px solid #ccc;
+	display: inline-block;
+	box-sizing: border-box;
+	resize:none;
+}
+
+@media (max-width:426px) {
+	
+	.delete_box {
+		left:3%;
+	}
+
+	.revise_box {
+		left:3%;
+	}
+	
+	.reply_box {
+		left:3%;
+	}
+	
+	.reply_d_box {
+		left:3%;
+	}
+	
+	.reply_box_content {
+		width: 400px;
+		background-color: white;
+		box-shadow: 0 0 10px #333;
+		border-radius: 5px;
+		font-size:10px;
+	}
+	
+
+	.close2 {
+		left:380px;
+	}
+	
+	.close1 {
+		right: 110px;
+	}
+	.reply_close {
+		right: 110px;
+	}
+	
+	.reply_d_close {
+		right: 110px;
+	}
+	#nickname{
+		margin-bottom:10px;	
+	}
+	input[type=text], input[type=password] {
+		padding: 10px 10px;
+	}	
+	
+}
+
